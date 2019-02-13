@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[a4paper,top=0.9in,bottom=0.9in,left=1.85in]{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{listings}
+\pagestyle{empty}
+\lstset{
+    basicstyle=\ttfamily,
+    columns=fullflexible,
+    keepspaces=true,
+    upquote=true
+}
+\lstdefinestyle{c}{
+    language=c,
+    showstringspaces=false,
+    commentstyle=\color{darkgray},
+    directivestyle=\color{teal},
+    keywordstyle=\color{blue},
+    identifierstyle=\color{violet},
+    stringstyle=\color{magenta}
+}
+\lstdefinestyle{out}{
+    basicstyle=\ttfamily\color{magenta},
+}
+\begin{document}
+\lstinputlisting[style=c,firstline=29]{../heart.c}
+\lstinputlisting[style=out]{../heart-2019-02-14.txt}
+\end{document}
